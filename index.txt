@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогулки по Нижегородской области</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\paxan\Мой диск (paxanchick_13@mail.ru)\ПРОЕКТ\Презентация\сайтик\styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Прогулки по Нижегородской области</h1>
+    <nav>
+        <a href="#home" onclick="showSection('home')"><i class="fas fa-home icon"></i>Главная</a>
+        <a href="#routes" onclick="showSection('routes')"><i class="fas fa-route icon"></i>Маршруты</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Добро пожаловать!</h2>
+    <p>На нашем сайте вы найдете лучшие маршруты для прогулок по Нижегородской области. Мы предлагаем вам уникальные идеи для путешествий, включая интересные места, кафе и гостиницы.</p>
+    <p>Исследуйте природу, культуру и искусство этого прекрасного региона. Начните свое путешествие прямо сейчас!</p>
+</section>
+
+<section id="routes">
+    <div class="routes-header">
+        <h2>Маршруты</h2>
+    </div>
+    
+    <div class="tabs-container">
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('overview')"><i class="fas fa-map-marked-alt icon"></i>Обзор</div>
+            <div class="tab" onclick="showTab('homes')"><i class="fas fa-hotel icon"></i>Гостиницы</div>
+            <div class="tab" onclick="showTab('day1')"><i class="fas fa-calendar-day icon"></i>День 1</div>
+            <div class="tab" onclick="showTab('day2')"><i class="fas fa-calendar-day icon"></i>День 2</div>
+            <div class="tab" onclick="showTab('day3')"><i class="fas fa-calendar-day icon"></i>День 3</div>
+            <div class="tab" onclick="showTab('day4')"><i class="fas fa-calendar-day icon"></i>День 4</div>
+            <div class="tab" onclick="showTab('expenses')"><i class="fas fa-coins icon"></i>Расходы</div>
+            <div class="tab" onclick="showTab('map')"><i class="fas fa-map icon"></i>На карте</div>
+        </div>
+    </div>
+
+    <section id="overview" class="tab-content">
+        <h3>Маршрут «На берегу Волги»</h3>
+        <p>Этот 4-дневный маршрут предлагает вам насладиться живописными видами реки Волги, посещая различные интересные места вдоль берега.</p>
+        <p>Включает посещение парков, кафе, исторических мест, музеев и многое другое. Маршрут начинается в Нижнем Новгороде и охватывает его основные достопримечательности, а также выезд в город Городец.</p>
+    </section>
+
+    <section id="homes" class="tab-content" style="display:none;">
+        <h3>Гостиницы</h3>
+        
+        <div class="location">
+            <h4>Гостиница "Московская"</h4>
+            <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/org/gostinitsa_moskovskaya/1059123738/" target="_blank">ул. Чаадаева, 3Б</a></p>
+            <p><i class="fas fa-globe icon"></i> <a href="https://moscowhotel-nnov.ru" target="_blank">https://moscowhotel-nnov.ru</a></p>
+            <p><i class="fas fa-phone icon"></i> +7 (831) 438-58-00</p>
+            <p><i class="fas fa-wallet icon"></i> Цены: от <span class="price">3000 руб./ночь</span></p>
+            <p><i class="fas fa-info-circle icon"></i> Современные номера, ресторан, конференц-залы, бесплатный Wi-Fi и парковка.</p>
+        </div>
+
+        <div class="location">
+            <h4>Гостиница «ЗОРИ»</h4>
+            <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/org/gostinitsa_zori/1124716236/" target="_blank">улица Красных Зорь 24/5</a></p>
+            <p><i class="fas fa-globe icon"></i> <a href="https://www.zorinn.ru" target="_blank">https://www.zorinn.ru</a></p>
+            <p><i class="fas fa-phone icon"></i> +7 (831) 272-55-01</p>
+            <p><i class="fas fa-wallet icon"></i> Цены: от <span class="price">2500 руб./ночь</span></p>
+            <p><i class="fas fa-info-circle icon"></i> Бесплатный Wi-Fi, парковка, услуги по организации мероприятий.</p>
+        </div>
+    </section>
+
+    <section id="day1" class="tab-content" style="display:none;">
+        <h3>День 1: Исторический центр и набережные</h3>
+        <p><strong>Тема:</strong> Знакомство с городом, виды на Волгу</p>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>Утро (09:00–12:00)</h4>
+            
+            <div class="location">
+                <h5>1. Завтрак в кофейне «Coffee like»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.342840, 43.860594" target="_blank">Юбилейный бул., 34</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://coffee-like.com" target="_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-wallet icon"></i> Средний чек: <span class="price">400–600 ₽</span></p>
+                <p><i class="fas fa-info-circle icon"></i> Кафе в европейском стиле, хороший кофе и атмосфера</p>
+            </div>
+
+            <div class="location">
+                <h5>2. Прогулка по Сормовскому парку</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.339053, 43.857045" target="_blank">Парк на карте</a></p>
+                <p><i class="fas fa-users icon"></i> <a href="https://vk.com/sormovsky_park" target="_blank">Официальная группа ВК</a></p>
+                <p><i class="fas fa-info-circle icon"></i> Что посмотреть: старинные аттракционы, пруд с утками, аллеи</p>
+                <p><i class="fas fa-clock icon"></i> Время: 1–1,5 часа</p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>День (12:00–17:00)</h4>
+            
+            <div class="location">
+                <h5>3. Обед в ресторане «Red Wall»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.330924, 44.002699" target="_blank">Кожевенная ул., 2</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://redwallrestaurant.ru" target="_blank">Сайт ресторана</a></p>
+                <p><i class="fas fa-phone icon"></i> Бронирование: +7 (831) 222-22-22</p>
+                <p><i class="fas fa-utensils icon"></i> Что заказать: уха по-царски (450 ₽), пироги с вишней (200 ₽)</p>
+            </div>
+
+            <div class="location">
+                <h5>4. Набережная Федоровского</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.326449, 43.987149" target="_blank">Панорамная точка</a></p>
+                <p><i class="fas fa-info-circle icon"></i> Что делать: лучшая панорама на Стрелку (слияние Оки и Волги)</p>
+                <p><i class="fas fa-camera icon"></i> Фотостоп: вид на Канавинский мост</p>
+            </div>
+
+            <div class="location">
+                <h5>5. Чкаловская лестница</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.332349, 44.009437" target="_blank">Местоположение</a></p>
+                <p><i class="fas fa-info-circle icon"></i> Интересное: 560 ступеней, памятник Чкалову</p>
+                <p><i class="fas fa-lightbulb icon"></i> Совет: подъем займет ~15 минут, но виды стоят того</p>
+                <p><i class="fas fa-history icon"></i> <a href="https://www.nn.ru/text/gorod/2024/07/24/73870013/" target="_blank">История и фото</a></p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-moon icon"></i>Вечер (17:00–20:00)</h4>
+            
+            <div class="location">
+                <h5>6. Ужин в ресторане «Gustu Loft»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.322694, 44.033151" target="_blank">Большая Печёрская ул., 65</a></p>
+                <p><i class="fab fa-instagram icon"></i> <a href="https://instagram.com/gustoloft_nn" target="_blank">Instagram</a></p>
+                <p><i class="fas fa-utensils icon"></i> Что попробовать: стейк рибай (1200 ₽), тирамису (350 ₽)</p>
+                <p><i class="fas fa-info-circle icon"></i> Атмосфера: лофт с панорамными окнами</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="day2" class="tab-content" style="display:none;">
+        <h3>День 2: Культура и искусство</h3>
+        <p><strong>Тема:</strong> История и архитектура</p>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>Утро (09:00–12:00)</h4>
+            
+            <div class="location">
+                <h5>1. Завтрак в кафе «Кремлевское»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.328120, 44.003417" target="_blank">Кремль, корпус 1</a></p>
+                <p><i class="fas fa-utensils icon"></i> Меню: Пирожки с начинкой (150 ₽), Каша (200 ₽), Чай (100 ₽)</p>
+                <p><i class="fas fa-wallet icon"></i> Средний чек: <span class="price">450 ₽</span></p>
+            </div>
+
+            <div class="location">
+                <h5>2. Нижегородский кремль</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.328428, 44.003066" target="_blank">Местоположение</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://ngiamz.ru" target="_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-info-circle icon"></i> Что посмотреть: Дмитриевская башня, выставки, стены кремля</p>
+                <p><i class="fas fa-clock icon"></i> Время: 2–3 часа</p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>День (12:00–17:00)</h4>
+            
+            <div class="location">
+                <h5>3. Обед в ресторане «Steak house»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.329512, 43.994344" target="_blank">Рождественская, 6</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://steakhouse-nn.ru" target="_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-utensils icon"></i> Меню: Стейк (900 ₽), Картофель фри (200 ₽), Салат (300 ₽)</p>
+                <p><i class="fas fa-wallet icon"></i> Средний чек: <span class="price">1400 ₽</span></p>
+            </div>
+
+            <div class="location">
+                <h5>4. Рождественская улица</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.328469, 43.988703" target="_blank">Местоположение</a></p>
+                <p><i class="fas fa-info-circle icon"></i> Что посмотреть: исторические здания, сувенирные лавки</p>
+                <p><i class="fas fa-clock icon"></i> Время: 1–2 часа</p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-moon icon"></i>Вечер (17:00–20:00)</h4>
+            
+            <div class="location">
+                <h5>5. Речная прогулка на теплоходе</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.329622, 43.987858" target="_blank">Речной вокзал</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://www.sputnik8.com/ru/nizhnynovgorod/category/teplohodnye-progulki?utm_source=yandex&utm_medium=cpc&utm_campaign=Dynamic_CategoryYandex_Search|55961135&utm_term=---autotargeting&utm_content=gbid|4629784889|adid|10927874105|banid|10927874105|kwid|53245999600|reid|53245999600|post|premium|pos|1|addph|no|srct|search|src|none|devt|desktop|p1|zagolovok|p2||agency&yclid=6194969803696373759%3F" target="_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-wallet icon"></i> Стоимость: <span class="price">800 ₽</span> (1,5 часа)</p>
+                <p><i class="fas fa-info-circle icon"></i> Что увидите: закат над Волгой, Жигулёвские горы</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="day3" class="tab-content" style="display:none;">
+        <h3>День 3: Городец и парк «Швейцария»</h3>
+        <p><strong>Тема:</strong> Загородные пейзажи</p>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>Утро (08:00–12:00)</h4>
+            
+            <div class="location">
+                <h5>1. Поездка в Городец</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.644822, 43.472360" target="_blank">Город на карте</a></p>
+                <p><i class="fas fa-subway icon"></i> <a href="https://rasp.yandex.ru/all-transport/nizhniy-novgorod--zavoljie" target="_blank">Расписание электричек</a></p>
+                <p><i class="fas fa-clock icon"></i> Время в пути: ~1 час</p>
+                <p><i class="fas fa-info-circle icon"></i> Что посмотреть: Музей самоваров, набережная с резными беседками</p>
+            </div>
+
+            <div class="location">
+                <h5>2. Обед в «Городецком трактире»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.643114, 43.468120" target="_blank">ул. Ленина, 12</a></p>
+                <p><i class="fas fa-utensils icon"></i> Спецпредложение: медовуха (200 ₽), щи в горшочке (350 ₽)</p>
+                <p><i class="fas fa-wallet icon"></i> Средний чек: <span class="price">600 ₽</span></p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>День (12:00–18:00)</h4>
+            
+            <div class="location">
+                <h5>3. Возвращение в Нижний Новгород</h5>
+                <p><i class="fas fa-clock icon"></i> Время в пути: ~1 час</p>
+            </div>
+
+            <div class="location">
+                <h5>4. Парк «Швейцария»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.276020, 43.973019" target="_blank">Местоположение</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://swissparknn.ru" target="_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-info-circle icon"></i> Чем заняться: канатная дорога, зоопарк, прогулки</p>
+                <p><i class="fas fa-clock icon"></i> Время: 2–3 часа</p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-moon icon"></i>Вечер (19:00–22:00)</h4>
+            
+            <div class="location">
+                <h5>5. Ужин в «Итальянке»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.307991, 43.989907" target="_blank">ул. Белинского, 9</a></p>
+                <p><i class="fas fa-globe icon"></i> <a href="https://italiancann.ru" target="_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-utensils icon"></i> Хит меню: паста с трюфелями (850 ₽)</p>
+                <p><i class="fas fa-wallet icon"></i> Средний чек: <span class="price">1200 ₽</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="day4" class="tab-content" style="display:none;">
+        <h3>День 4: Музеи и гастрономия</h3>
+        <p><strong>Тема:</strong> Культурный финал</p>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>Утро (10:00–13:00)</h4>
+            
+            <div class="location">
+                <h5>1. Музей «Художественные промыслы»</h5>
+                <p><i class="fas fa-globe icon"></i> <a href="https://ngiamz.ru/muzey-istorii-khudozhestvennykh-promyslov"_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-wallet icon"></i> Стоимость билета: <span class="price">400 ₽</span></p>
+                <p><i class="fas fa-info-circle icon"></i> Экспонаты: хохлома, городецкая роспись</p>
+            </div>
+
+            <div class="location">
+                <h5>2. Ланч в «Булочной №1»</h5>
+		<p><i class="fas fa-globe icon"></i> <a href="https://restaurantguru.ru/bakery-1-Nizhny-Novgorod-3?ysclid=m9a5ohqsf6249580182"_blank">Официальный сайт</a></p>
+                <p><i class="fas fa-utensils icon"></i> Что попробовать: курник (пирог с курицей, 300 ₽)</p>
+                <p><i class="fas fa-wallet icon"></i> Средний чек: <span class="price">300 ₽</span></p>
+            </div>
+        </div>
+
+        <div class="time-slot">
+            <h4><i class="fas fa-sun icon"></i>День (13:00–17:00)</h4>
+            
+            <div class="location">
+                <h5>3. Арт-галерея «Кладовка»</h5>
+                <p><i class="fas fa-users icon"></i> <a href="https://vk.com/kladovkann" target="_blank">Официальная группа ВК</a></p>
+                <p><i class="fas fa-wallet icon"></i> Стоимость билета: <span class="price">200 ₽</span></p>
+                <p><i class="fas fa-info-circle icon"></i> Выставки: современные нижегородские художники</p>
+            </div>
+
+            <div class="location">
+                <h5>4. Финальный ужин в «Гастрономике»</h5>
+                <p><i class="fas fa-map-marker-alt icon"></i> <a href="https://yandex.ru/maps/?text=56.319834, 44.010074" target="_blank">ул. Ошарская, 18</a></p>
+		<p><i class="fas fa-users icon"></i> <a href="https://vk.com/gastronomicafan" target="_blank">Официальная группа ВК</a></p>
+                <p><i class="fas fa-utensils icon"></i> Дегустационное меню: 2500 ₽/чел</p>
+                <p><i class="fas fa-info-circle icon"></i> Лучшие блюда нижегородской кухни</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expenses" class="tab-content" style="display:none;">
+        <h3>Примерные общие расходы</h3>
+        
+        <div class="location">
+            <h4>День 1</h4>
+            <p><i class="fas fa-utensils icon"></i> Питание: 2550 ₽</p>
+            <p><i class="fas fa-ticket-alt icon"></i> Развлечения: бесплатно</p>
+            <p><i class="fas fa-wallet icon"></i> Итого: <span class="price">2550 ₽</span></p>
+        </div>
+
+        <div class="location">
+            <h4>День 2</h4>
+            <p><i class="fas fa-utensils icon"></i> Питание: 1850 ₽</p>
+            <p><i class="fas fa-ticket-alt icon"></i> Развлечения: 800 ₽ (теплоход) + 300 ₽ (кремль)</p>
+            <p><i class="fas fa-wallet icon"></i> Итого: <span class="price">2950 ₽</span></p>
+        </div>
+
+        <div class="location">
+            <h4>День 3</h4>
+            <p><i class="fas fa-utensils icon"></i> Питание: 1800 ₽</p>
+            <p><i class="fas fa-ticket-alt icon"></i> Развлечения: 400 ₽ (парк) + 300 ₽ (транспорт)</p>
+            <p><i class="fas fa-wallet icon"></i> Итого: <span class="price">2500 ₽</span></p>
+        </div>
+
+        <div class="location">
+            <h4>День 4</h4>
+            <p><i class="fas fa-utensils icon"></i> Питание: 2800 ₽</p>
+            <p><i class="fas fa-ticket-alt icon"></i> Развлечения: 600 ₽ (музеи)</p>
+            <p><i class="fas fa-wallet icon"></i> Итого: <span class="price">3400 ₽</span></p>
+        </div>
+
+        <div class="location" style="background-color: #e8f4fc;">
+            <h4>Общий итог (без проживания)</h4>
+            <p><i class="fas fa-wallet icon"></i> Всего: <span class="price" style="font-size: 1.2em;">11400 ₽</span></p>
+        </div>
+    </section>
+
+    <section id="map" class="tab-content" style="display:none;">
+        <h3>Интерактивная карта маршрута</h3>
+        <div class="filter-controls">
+            <select id="day-filter" class="filter-select">
+                <option value="all">Все дни</option>
+                <option value="1">День 1</option>
+                <option value="2">День 2</option>
+                <option value="3">День 3</option>
+                <option value="4">День 4</option>
+            </select>
+            <button id="apply-filter" class="apply-filter-btn">Применить фильтр</button>
+        </div>
+        <div id="map-container">
+            <div class="map-loading">Загрузка карты...</div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <p>© 2024-2025 Прогулки по Нижегородской области. Все права защищены.</p>
+</footer>
+
+<script>
+    // Данные для маршрута
+    const routePoints = [
+        // Координаты точек маршрута
+        // ...
+    ];
+
+    // Глобальные переменные для карты
+    let map;
+    let clusterer;
+    let placemarks = [];
+    let mapInitialized = false;
+
+    // Функция для отображения секции
+    function showSection(sectionId) {
+        document.querySelectorAll('section[id="home"], section[id="routes"]').forEach(section => {
+            section.style.display = 'none';
+        });
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        const section = document.getElementById(sectionId.replace('#', ''));
+        if (section) {
+            section.style.display = 'block';
+            window.scrollTo({
+                top: section.offsetTop - 150,
+                behavior: 'smooth'
+            });
+        }
+        
+        const activeLink = document.querySelector(`nav a[href="${sectionId}"]`);
+        if (activeLink) {
+            activeLink.classList.add('active');
+        }
+    }
+
+    // Функция для отображения вкладки
+    function showTab(tabId) {
+        const cleanId = tabId.replace('#', '');
+        
+        document.querySelectorAll('.tab-content').forEach(tab => {
+            tab.style.display = 'none';
+        });
+        
+        const tab = document.getElementById(cleanId);
+        if (tab) {
+            tab.style.display = 'block';
+            window.scrollTo({
+                top: document.querySelector('.routes-header').offsetTop,
+                behavior: 'smooth'
+            });
+        }
+
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        
+        const activeTab = document.querySelector(`.tab[onclick*="${tabId}"]`);
+        if (activeTab) {
+            activeTab.classList.add('active');
+        }
+
+        if (cleanId === 'map' && !mapInitialized) {
+            initMap();
+            mapInitialized = true;
+        }
+    }
+
+    // Функция инициализации карты
+    function initMap() {
+        if (typeof ymaps === 'undefined') {
+            console.error('Yandex Maps API не загружена');
+            document.getElementById('map-container').innerHTML = 
+                '<div class="map-loading">Ошибка загрузки карты. Пожалуйста, обновите страницу.</div>';
+            return;
+        }
+
+        ymaps.ready(function() {
+            map = new ymaps.Map('map-container', {
+                center: [56.326887, 44.005986],
+                zoom: 12,
+                controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
+            });
+
+            clusterer = new ymaps.Clusterer({
+                clusterDisableClickZoom: true,
+                clusterOpenBalloonOnClick: true,
+                clusterBalloonContentLayout: 'cluster#balloonCarousel'
+            });
+
+            routePoints.forEach(point => {
+                const placemark = new ymaps.Placemark(
+                    point.coords,
+                    {
+                        balloonContentHeader: `<strong>${point.title}</strong>`,
+                        balloonContentBody: point.description,
+                        balloonContentFooter: `День ${point.day}`,
+                        hintContent: point.title
+                    },
+                    {
+                        preset: 'islands#dotIcon',
+                        iconColor: point.iconColor
+                    }
+                );
+                placemark.day = point.day;
+                placemarks.push(placemark);
+            });
+
+            clusterer.add(placemarks);
+            map.geoObjects.add(clusterer);
+
+            map.setBounds(clusterer.getBounds(), {
+                checkZoomRange: true,
+                zoomMargin: 50
+            });
+
+            document.getElementById('apply-filter').addEventListener('click', function() {
+                const selectedDay = document.getElementById('day-filter').value;
+                applyDayFilter(selectedDay);
+            });
+
+            mapInitialized = true;
+            
+            const loadingElement = document.querySelector('.map-loading');
+            if (loadingElement) {
+                loadingElement.style.display = 'none';
+            }
+        });
+    }
+
+    // Функция применения фильтра по дням
+    function applyDayFilter(day) {
+        if (!clusterer || !placemarks) return;
+        
+        const filteredPlacemarks = placemarks.filter(placemark => {
+            return day === 'all' || placemark.day == day;
+        });
+        
+        clusterer.removeAll();
+        clusterer.add(filteredPlacemarks);
+        
+        if (filteredPlacemarks.length > 0) {
+            map.setBounds(clusterer.getBounds(), {
+                checkZoomRange: true,
+                zoomMargin: 50
+            });
+        }
+    }
+
+    // Инициализация при загрузке страницы
+    document.addEventListener('DOMContentLoaded', function() {
+        showSection('home');
+        showTab('overview');
+        
+        if (window.location.hash) {
+            const hash = window.location.hash;
+            if (hash === '#home' || hash === '#routes') {
+                showSection(hash);
+            } else {
+                showSection('routes');
+                setTimeout(() => showTab(hash), 100);
+            }
+        }
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                showSection(this.getAttribute('href'));
+            });
+        });
+    });
+</script>
+
+<!-- Подключаем API Яндекс.Карт -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=7bff61c0-f4f4-4f61-a4cf-3abb8a4dd4bd&lang=ru_RU"></script>
+
+</body>
+</html>

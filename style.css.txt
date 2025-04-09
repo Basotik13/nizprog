@@ -1,0 +1,303 @@
+/* Основные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    padding-bottom: 60px;
+}
+
+/* Шапка сайта */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation: fadeInDown 1s ease;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 10px;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Основные секции */
+section {
+    padding: 30px;
+    margin: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Заголовки */
+h2 {
+    color: #6a11cb;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Стили для маршрутов */
+.routes-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.routes-header h2 {
+    margin: 0 30px 15px;
+}
+
+.tabs-container {
+    position: sticky;
+    top: 80px;
+    background: white;
+    z-index: 99;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.tab {
+    margin: 5px;
+    padding: 10px 20px;
+    background: rgba(106, 17, 203, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.tab:hover {
+    background: rgba(106, 17, 203, 0.2);
+    transform: translateY(-3px);
+}
+
+.tab.active {
+    background: #6a11cb;
+    color: white;
+}
+
+/* Контент вкладок */
+.tab-content {
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 15px;
+    margin: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content h3 {
+    color: #6a11cb;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.tab-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.tab-content h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.tab-content a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tab-content a:hover {
+    text-decoration: underline;
+}
+
+/* Иконки и элементы интерфейса */
+.icon {
+    margin-right: 10px;
+}
+
+.time-slot {
+    margin-bottom: 30px;
+}
+
+.location {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.price {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Стили для карты */
+#map-container {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.map-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 1000;
+    font-size: 1.2rem;
+}
+
+/* Элементы управления фильтрами */
+.filter-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.filter-select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 14px;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.apply-filter-btn {
+    padding: 10px 20px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.apply-filter-btn:hover {
+    background-color: #5a0db3;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    nav a, .tab {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    #map-container {
+        height: 400px;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-select {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .apply-filter-btn {
+        width: 100%;
+    }
+    
+    .routes-header h2 {
+        margin: 0 15px 10px;
+        font-size: 1.5rem;
+    }
+    
+    .tabs-container {
+        top: 60px;
+    }
+    
+    .tab {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
